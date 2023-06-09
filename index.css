@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+.page {
+    max-width: 1272px;
+    /* font-family: Acrom; */
+    color: #4D4D4D;
+    text-rendering: optimizeLegibility;
+    margin-left: calc((100vw - 1272px) / 2);
+}
+
+.header {
+    margin-top: 32px;
+}
+
+.header::after {
+    content: '';
+    background-image: url(./images/white-room.png);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 90vw;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    object-fit: contain;
+    background-size: cover;
+    aspect-ratio: 1/0.5;
+    z-index: -5;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 192px;
+    height: 48px;
+    padding-right: 51px;
+}
+
+.header__container-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__container-address {
+    display: flex;
+}
+
+.header__address-icon {
+    width: 14px;
+    height: 18px;
+}
+
+.header__adress {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    margin: 0;
+    padding-left: 11px;
+}
+
+.header__container-number {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.number {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #232629;
+}
+
+.header__WhatsApp-icon {
+    width: 24px;
+    height: 24px;
+    padding: 0 48px;
+}
+
+.booking-button {
+    width: 197px;
+    height: 56px;
+    background-color: #1AB51A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.header__nav {
+    padding-top: 31px;
+}
+
+.header__link {
+    margin-right: 56px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 150%;
+}
+
+.header__link:last-of-type {
+    margin-right: 0;
+}
+
+.hero {
+    margin-top: 40px;
+    position: relative;
+}
+
+
+.hero__title {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 96px;
+    line-height: 120%;
+    color: #232629;
+}
+
+.hero__span {
+    color: #1AB51A;
+}
+
+.hero__company {
+    margin: 24px 0 0 0;
+    max-width: 450px;
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: #232629;
+}
+
+.hero__subtitle {
+    margin: 16px 0 32px;
+    width: 450px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #232629;
+}
+
+.hero__auto-img {
+    position: absolute;
+    left: 500px;
+    top: 200px;
+}
+
+.hero__moto-img {
+    position: absolute;
+    left: 1040px;
+    top: 250px;
+}
+
+.car-catalog {
+    margin-top: 140px;
+}
+
+.title {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    color: #232629;
+    margin: 0;
+}
+
+.car-catalog__cards {
+    display: flex;
+    list-style: none;
+    margin: 40px 0 0;
+    padding: 0;
+}
+
+.car-catalog__card {
+    min-height: 615px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.car-catalog__container {
+    width: 624px;
+    height: 340px;
+    background: #F5F6FB;
+}
+
+.card-catalog__image-auto {
+    margin-left: 142px;
+}
+
+.car-catalog__container-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #78828C;
+    margin-left: 32px;
+}
+
+.car-catalog__price {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #232629;
+    margin: 0;
+    margin-left: 32px;
+}
+
+.card-catalog__span {
+    color: #1AB51A;
+}
+
+.card-catalog__card-title {
+    margin: 32px 0 24px;
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    color: #232629;
+}
+
+.card-catalog__card-subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #232629;
+    margin: 0;
+}
+
+.card-catalog__popup-button {
+    width: 160px;
+    height: 56px;
+    background-color: #1AB51A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.booking-section {
+    margin-top: 80px;
+}
+
+.booking-section__description {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #232629;
+    max-width: 948px;
+    margin: 40px 0 24px 0;
+}
+
+.booking-section__subtitle {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #232629;
+    margin: 0 0 44px;
+}
+
+.booking-section__rules {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bookins-section__rule {
+    position: relative;
+    max-width: 312px;
+    margin: 0 12px 0 0;
+}
+
+.bookins-section__rule::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url(./images/mark.svg);
+    background-size: cover;
+    left: 0px;
+    top: 0px;
+}
+
+.booking-section__border {
+    width: 260px;
+    border: 1px dashed #D4D5DD;
+    margin-left: 52px;
+    margin-top: 20px;
+}
+
+.booking-section__rule-title {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #232629;
+    margin: 47px 0 18px;
+}
+
+.booking-section__rule-description {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #232629;
+}
+
+.about-us {
+    margin-top: 80px;
+}
+
+.about-us__subtitle {
+    margin: 24px 0 40px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #232629;
+}
+
+.about-us__reasons {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.about-us__reason {
+    position: relative;
+    width: 408px;
+    height: 260px;
+    margin-right: 24px;
+    background: #F5F6FB;
+    border-radius: 16px;
+}
+
+.about-us__reason-title {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: #232629;
+    margin: 104px 0 0 32px;
+}
+
+.about-us__reason-subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #232629;
+    margin: 16px 0 0 32px;
+}
+
+.about-us__icon {
+    position: absolute;
+    top: 38px;
+    left: 38px;
+}
+
+.contacts {
+    margin-top: 80px;
+}
+
+.contacts__map {
+    width: 1272px;
+    height: 640px;
+    background-image: url(./images/map.svg);
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+
+.contacts__container {
+    width: 380px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    margin-right: 40px;
+    position: relative;
+}
+
+
+.contacts__container:first-of-type {
+    margin-top: 40px;
+    margin-bottom: 8px;
+}
+
+.contacts__container:first-of-type::after {
+    content: '';
+    position: absolute;
+    background-image: url(./images/WhatsApp-icon.svg);
+    width: 24px;
+    height: 24px;
+    bottom: 24px;
+    right: 130px;
+}
+
+.contacts__container:last-of-type::after {
+    content: '';
+    position: absolute;
+    background-image: url(./images/icon-i.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 22px;
+    height: 22px;
+    top: 26px;
+    left: 26px;
+}
+
+.contacts__adress-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #78828C;
+    margin-left: 24px;
+    margin-top: 24px;
+}
+
+.contacts__adress-subtitle {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #232629;
+    margin: 8px 0 24px 24px;
+}
+
+.contacts__number-title {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #78828C;
+    margin: 0 0 24px 24px;
+}
+
+.contacts__number-subtitle {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: #232629;
+    margin: 0 0 24px 24px;
+}
+
+.contacts__info {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: #232629;
+    margin-left: 24px;
+    margin-top: 12px;
+    margin-right: 24px;
+}
+
+.contacts__info:first-of-type {
+    margin-top: 64px;
+}
+
+.contacts__info:last-of-type {
+    margin-bottom: 24px;
+}
+
+.banner {
+    background: #F5F6FB;
+    border-radius: 16px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    position: relative;
+}
+
+.banner::after {
+    content: '';
+    background-image: url('./images/boy.png');
+    position: absolute;
+    right: 44px;
+    top: -49px;
+    width: 496px;
+    height: 397px;
+}
+
+.banner::before {
+    content: '';
+    background-image: url('./images/moto-banner.png');
+    position: absolute;
+    right: 356px;
+    top: 187px;
+    width: 417px;
+    height: 161px;
+}
+
+.banner__title {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    color: #232629;
+    padding-top: 48px;
+    margin: 0 0 0 64px;
+}
+
+.banner__subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #232629;
+    margin: 24px 0 32px 64px;
+}
+
+.banner__container {
+    margin: 0 0 0 64px;
+    padding-bottom: 48px;
+    display: flex;
+}
+
+.booking-button_place_banner {
+    margin-right: 32px;
+}
