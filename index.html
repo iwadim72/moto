@@ -11,8 +11,8 @@
 </head>
 
 <body>
-    <div class="page">
-        <header class="header">
+    <div class="page" id="page">
+        <header class="header" id="header">
             <div class="header__container">
                 <div class="header__container-logo">
                     <img class="logo" src="./images/logo.svg" alt="Логотип">
@@ -29,11 +29,11 @@
             </div>
 
             <nav class="header__nav">
-                <a class="header__link">Автомобили</a>
-                <a class="header__link">Мотоциклы</a>
-                <a class="header__link">Как забронировать?</a>
-                <a class="header__link">Почему мы?</a>
-                <a class="header__link">Контакты</a>
+                <a class="header__link" href="#car-catalog">Автомобили</a>
+                <a class="header__link" href="#car-catalog">Мотоциклы</a>
+                <a class="header__link" href="#booking-section">Как забронировать?</a>
+                <a class="header__link" href="#about-us">Почему мы?</a>
+                <a class="header__link" href="#contacts">Контакты</a>
             </nav>
         </header>
         <main class="main">
@@ -48,7 +48,7 @@
                 <button class="booking-button" type="button">Забронировать</button>
             </section>
 
-            <section class="car-catalog">
+            <section class="car-catalog" id="car-catalog">
                 <h3 class="title">Авто, мотопарк</h3>
                 <ul class="car-catalog__cards">
                     <li class="car-catalog__card">
@@ -86,7 +86,7 @@
                 </ul>
             </section>
 
-            <section class="booking-section">
+            <section class="booking-section" id="booking-section">
                 <div class="booking-section__container">
                     <h3 class="title">Как забронировать?</h3>
                     <p class="booking-section__description">Бронирование транспортного средства осуществляется через
@@ -124,7 +124,7 @@
                 </ul>
             </section>
 
-            <section class="about-us">
+            <section class="about-us" id="about-us">
                 <h3 class="title">Почему мы?</h3>
                 <p class="about-us__subtitle">Многие жители и гости Сочи выбирают наш сервис по следующим причинам:</p>
                 <ul class="about-us__reasons">
@@ -149,7 +149,7 @@
                 </ul>
             </section>
 
-            <section class="contacts">
+            <section class="contacts" id="contacts">
                 <h3 class="title">Контакты</h3>
                 <div class="contacts__map">
                     <div class="contacts__container">
@@ -179,8 +179,43 @@
                 </div>
             </section>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__container-logo">
+                    <img class="logo" src="./images/logo.svg" alt="Логотип">
+                    <div class="footer__container-address">
+                        <img class="footer__address-icon" src="./images/adress-icon.svg" alt="Адресс компании">
+                        <p class="footer__adress">Сочи, Адлер, Красная поляна</p>
+                        <p class="footer__number">+7 (928) 216-85-25</p>
+                        <img class="footer__WhatsApp-icon" src="./images/WhatsApp-icon.svg" alt="Ссылка в WhatsApp">
+                    </div>
+                </div>
+                <div class="footer__container-booking">
+                    <button class="booking-button">Забронировать</button>
+                </div>
+            </div>
+
+            <nav class="footer__nav">
+                <div>
+                    <a class="footer__link" href="#car-catalog">Автомобили</a>
+                    <a class="footer__link" href="#car-catalog">Мотоциклы</a>
+                    <a class="footer__link">Форма бронирования</a>
+                    <a class="footer__link">Поддержка</a>
+                </div>
+                <div class="footer__nav-up-container">
+                    <a class="footer__link" href="#header">Наверх</a>
+                </div>
+            </nav>
+
+            <div class="footer__border"></div>
+
+            <p class="footer__company">
+                © СочиGO, Inc. 2023. По курорту с ветерком!
+            </p>
+        </footer>
     </div>
+
+    <script src="./index.js"></script>
 </body>
 
 </html>
