@@ -1,5 +1,7 @@
+@import url('./normalize.css');
 @import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 
 
 .page {
@@ -16,7 +18,7 @@
 
 .header::after {
     content: '';
-    background-image: url(./images/white-room.png);
+    background-image: url(../images/white-room.png);
     position: absolute;
     top: 0;
     right: 0;
@@ -270,6 +272,12 @@
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
+    transition: background-color, ease-in, 0.3s;
+}
+
+.card-catalog__popup-button:hover {
+    cursor: pointer;
+    background-color: #1a911a;
 }
 
 .booking-section {
@@ -315,7 +323,7 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    background-image: url(./images/mark.svg);
+    background-image: url(../images/mark.svg);
     background-size: cover;
     left: 0px;
     top: 0px;
@@ -410,7 +418,7 @@
 .contacts__map {
     width: 1272px;
     height: 640px;
-    background-image: url(./images/map.svg);
+    background-image: url(../images/map.svg);
     margin-top: 40px;
     display: flex;
     flex-direction: column;
@@ -435,7 +443,7 @@
 .contacts__container:first-of-type::after {
     content: '';
     position: absolute;
-    background-image: url(./images/WhatsApp-icon.svg);
+    background-image: url(../images/WhatsApp-icon.svg);
     width: 24px;
     height: 24px;
     bottom: 24px;
@@ -445,7 +453,7 @@
 .contacts__container:last-of-type::after {
     content: '';
     position: absolute;
-    background-image: url(./images/icon-i.svg);
+    background-image: url(../images/icon-i.svg);
     background-repeat: no-repeat;
     background-position: center;
     width: 22px;
@@ -525,7 +533,7 @@
 
 .banner::after {
     content: '';
-    background-image: url('./images/boy.png');
+    background-image: url('../images/boy.png');
     position: absolute;
     right: 44px;
     top: -49px;
@@ -535,7 +543,7 @@
 
 .banner::before {
     content: '';
-    background-image: url('./images/moto-banner.png');
+    background-image: url('../images/moto-banner.png');
     position: absolute;
     right: 356px;
     top: 187px;
@@ -658,7 +666,7 @@
     content: '';
     width: 12px;
     height: 6px;
-    background-image: url('./images/Iconup.svg');
+    background-image: url('../images/Iconup.svg');
     position: absolute;
     left: -26px;
     top: 9px;
@@ -680,4 +688,368 @@
     line-height: 17px;
     color: #78828C;
     margin: 0 0 32px;
+}
+
+.popup {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.15s linear, visibility 0.15s;
+    z-index: 5;
+
+}
+
+.popup_opened {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup__container {
+    background-color: #FFFFFF;
+    color: black;
+    width: 1416px;
+    height: 1042px;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    position: relative;
+    margin: 0 auto 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup__title {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 120%;
+    color: #000000;
+    margin: 48px 0 40px 72px;
+}
+
+
+
+.swiper-slide__img-container {
+    width: 408px;
+    height: 260px;
+
+    background: #F5F6FB;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swiper-slide__img {
+    width: 335px;
+    height: 158px;
+}
+
+
+.swiper-slide__title {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    /* identical to box height, or 29px */
+
+
+    color: #000000;
+    margin: 32px 0 4px 0;
+
+}
+
+.swiper-slide__subtitle {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    /* identical to box height, or 21px */
+
+
+    color: #78828C;
+    margin: 0 0 16px 0;
+}
+
+.swiper-cost-big-container {
+    margin-top: 8px;
+    display: flex;
+}
+
+.swiper-slide__cost-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.swiper-slide__cost-title {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    /* identical to box height, or 30px */
+
+
+    color: #000000;
+    margin: 0;
+    margin-top: 16px;
+}
+
+.swiper-slide__cost {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    color: #000000;
+    margin: 0;
+    margin-top: 8px;
+    margin-right: 10px;
+}
+
+.swiper-slide__cost-border {
+    width: 197px;
+    height: 0px;
+
+    border: 1px dashed #D4D5DD;
+}
+
+.swiper-slide__cost-days {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    /* identical to box height, or 21px */
+
+
+    color: #78828C;
+    margin: 0 0 0 10px;
+}
+
+.swiper-slide__prepayment {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    /* identical to box height, or 24px */
+
+
+    color: #78828C;
+    margin: 16px 0 8px 0;
+}
+
+.swiper-slide__prepayment-cost {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    /* identical to box height, or 30px */
+
+
+    color: #232629;
+    margin: 0;
+}
+
+
+.embla {
+    overflow: hidden;
+    margin-left: 74px;
+    margin-right: 74px;
+}
+
+.embla__container {
+    display: flex;
+
+}
+
+.embla__slide {
+    flex: 0 0 400px;
+    margin-right: 22px;
+}
+
+.embla__viewport {
+    overflow: hidden;
+}
+
+.embla__next {
+    position: absolute;
+    right: 48px;
+    top: 252px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    background-image: url(../images/Iconright.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color, ease-in, 0.1s;
+    box-shadow: 0px 4px 12px rgba(56, 57, 63, 0.1);
+}
+
+.embla__next:hover {
+    background-color: #F5F6FB;
+    cursor: pointer;
+}
+
+.embla__prev {
+    position: absolute;
+    left: 48px;
+    top: 252px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    background-image: url(../images/Iconright.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 4px 12px rgba(56, 57, 63, 0.1);
+    transition: background-color, ease-in, 0.1s;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.embla__prev:hover {
+    background-color: #F5F6FB;
+    cursor: pointer;
+}
+
+.popup__machine-feed {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+    /* identical to box height, or 29px */
+
+
+    color: #232629;
+    margin: 48px 0 0 72px;
+}
+
+.popup__machine-feed-containers {
+    display: flex;
+    margin: 24px 0 0 72px;
+}
+
+.popup__machine-feed-container {
+    margin-right: 64px;
+}
+
+.popup__machine-feed-city {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #78828C;
+    margin: 0;
+}
+
+.popup__machine-feed-cost {
+    font-family: 'Unbounded';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: #232629;
+    margin: 8px 0 0 0;
+}
+
+.popup__machine-feed-notification-container {
+    margin-top: 24px;
+    display: flex;
+    margin-left: 72px;
+    align-items: center;
+}
+
+.popup__machine-feed-notification-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 18px;
+}
+
+.popup__machine-feed-notification {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #232629;
+    margin: 0;
+}
+
+.popup__close {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 12px;
+    height: 12px;
+    background-image: url(../images/IconX.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.popup__close:hover {
+    cursor: pointer;
+}
+
+.swiper-slide__cost-border-big {
+    width: 239px;
+    height: 0px;
+    border: 1px dashed #D4D5DD;
+
+}
+
+.swiper-slide__img_K1600GT {
+    background: url(../images/5BMW-K1600GT.png);
+    background-position: center;
+    width: 254px;
+    height: 184px;
+    background-size: 254px;
+}
+
+.swiper-slide__img_Harley-Davidson {
+    background: url(../images/image-harley.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 288px;
+    height: 192px;
+    background-size: 193px;
+}
+
+.swiper-slide__img_G310GS {
+    background: url(../images/BMWG310GS.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 288px;
+    height: 192px;
+    background-size: 216px;
+}
+
+.swiper-slide__img_CFMOTO {
+    background: url(../images/CFMOTO.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 288px;
+    height: 192px;
+    background-size: 183px;
+}
+
+.popup__container_moto {
+    height: 1215px;
 }
