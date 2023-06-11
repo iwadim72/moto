@@ -1867,7 +1867,7 @@ body {
         margin-top: 200px;
     }
 
-    .popup__container {
+    .popup__container_auto {
         margin-top: 50px;
     }
 }
@@ -1877,7 +1877,7 @@ body {
         margin-top: 250px;
     }
 
-    .popup__container {
+    .popup__container_auto {
         margin-top: 100px;
     }
 }
@@ -1887,7 +1887,7 @@ body {
         margin-top: 300px;
     }
 
-    .popup__container {
+    .popup__container_auto {
         margin-top: 150px;
     }
 }
@@ -1897,7 +1897,7 @@ body {
         margin-top: 350px;
     }
 
-    .popup__container {
+    .popup__container_auto {
         margin-top: 200px;
     }
 }
@@ -1907,7 +1907,7 @@ body {
         margin-top: 400px;
     }
 
-    .popup__container {
+    .popup__container_auto {
         margin-top: 250px;
     }
 }
@@ -1917,7 +1917,7 @@ body {
         margin-top: 450px;
     }
 
-    .popup__container {
+    .popup__container_auto {
         margin-top: 300px;
     }
 }
@@ -1927,7 +1927,7 @@ body {
         margin-top: 500px;
     }
 
-    .popup__container {
+    .popup__container_auto {
         margin-top: 350px;
     }
 }
