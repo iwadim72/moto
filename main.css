@@ -362,8 +362,11 @@ template {
 /*!**************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/styles/index.css (2) ***!
   \**************************************************************************************************************************************************/
-body {
-    overflow-x: hidden;
+html,
+.body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden
 }
 
 .page {
@@ -693,12 +696,8 @@ body {
 @media screen and (max-width: 1399px) {
     .car-card {
         width: calc((100vw - 100px) / 2);
-        margin-right: 20px;
         overflow: hidden;
-    }
-
-    .car-catalog__container {
-        width: 100%;
+        margin-right: 24px;
     }
 }
 
@@ -708,11 +707,12 @@ body {
     }
 
     .car-card {
-        width: calc((100vw - 80px) / 2);
         margin-right: 0;
+        width: calc((100vw - 84px) / 2);
     }
 
-    .car-card:first-of-type {
+    .car-catalog__card {
+        width: 100%;
         margin-right: 24px;
     }
 
@@ -724,6 +724,7 @@ body {
 
     .car-catalog__container {
         height: 200px;
+        width: 100%;
     }
 
     .car-catalog__card {
