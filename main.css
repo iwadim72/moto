@@ -1830,14 +1830,6 @@ body {
     height: 1215px;
 }
 
-@media screen and (max-width: 1500px) {
-    .popup__container {
-        width: calc(100vw - 70px);
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-}
-
 @media screen and (max-height: 1280px) {
     .popup__container_moto {
         margin-top: 70px;
@@ -1929,5 +1921,145 @@ body {
 
     .popup__container_auto {
         margin-top: 350px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .popup__container {
+        width: calc(100vw - 70px);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .popup__container {
+        width: calc(100% - 98px);
+        height: 858px;
+        margin-left: 49px;
+        margin-right: 49px;
+    }
+
+    .popup__title {
+        margin: 32px 0 32px 40px;
+        font-size: 36px;
+    }
+
+    .embla__slide {
+        flex: 0 0 48%;
+        margin-right: 24px;
+    }
+
+    .swiper-slide__title {
+        font-size: 20px;
+    }
+
+    .swiper-slide__subtitle {
+        font-size: 14px;
+    }
+
+    .swiper-slide__cost-title {
+        font-size: 18px;
+    }
+
+    .swiper-slide__img {
+        width: 232px;
+        height: 110px;
+    }
+
+    .swiper-slide__img-container {
+        width: 100%;
+        height: 180px;
+    }
+
+    .embla {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .swiper-slide__cost {
+        font-size: 14px;
+    }
+
+    .swiper-slide__cost-days {
+        font-size: 14px;
+    }
+
+    .swiper-slide__cost-border {
+        width: 30%;
+    }
+
+    .swiper-slide__prepayment {
+        font-size: 14px;
+    }
+
+    .swiper-slide__prepayment-cost {
+        font-size: 18px;
+    }
+
+    .popup__machine-feed {
+        margin: 32px 0 0 40px;
+        font-size: 20px;
+    }
+
+    .popup__machine-feed-containers {
+        margin: 24px 0 0 40px;
+    }
+
+    .popup__machine-feed-city {
+        font-size: 14px;
+    }
+
+    .popup__machine-feed-cost {
+        font-size: 18px;
+    }
+
+    .popup__machine-feed-notification-container {
+        margin: 26px 0 0 40px;
+    }
+
+    .popup__container_moto {
+        height: 995px;
+        margin-top: 0;
+    }
+
+    .swiper-slide__img_K1600GT {
+        width: 213px;
+        height: 159px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .swiper-slide__img_Harley-Davidson {
+        width: 213px;
+        height: 159px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .swiper-slide__img_G310GS {
+        width: 213px;
+        height: 159px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .swiper-slide__img_CFMOTO {
+        width: 213px;
+        height: 159px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .swiper-slide__cost-border-big {
+        width: 44%;
+    }
+
+    .embla__next {
+        top: 220px;
+    }
+
+    .embla__prev {
+        top: 220px;
     }
 }
