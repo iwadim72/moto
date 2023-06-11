@@ -362,6 +362,10 @@ template {
 /*!**************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/styles/index.css (2) ***!
   \**************************************************************************************************************************************************/
+body {
+    overflow-x: hidden;
+}
+
 .page {
     max-width: 1272px;
     /* font-family: Acrom; */
@@ -369,6 +373,21 @@ template {
     text-rendering: optimizeLegibility;
     margin-left: calc((100vw - 1272px) / 2);
 }
+
+@media screen and (max-width: 1399px) {
+    .page {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .page {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+}
+
 
 .header {
     margin-top: 32px;
@@ -389,6 +408,7 @@ template {
     z-index: -5;
 }
 
+
 .header__container {
     display: flex;
     justify-content: space-between;
@@ -400,6 +420,18 @@ template {
     padding-right: 51px;
 }
 
+@media screen and (max-width: 1023px) {
+    .logo {
+        padding-right: 65px;
+    }
+
+    .header::after {
+        background-image: url(0684de9a76b3e6bd95f7.png);
+        top: 20px;
+        aspect-ratio: 1/1.2;
+    }
+}
+
 .header__container-logo {
     display: flex;
     align-items: center;
@@ -407,6 +439,12 @@ template {
 
 .header__container-address {
     display: flex;
+}
+
+@media screen and (max-width: 1023px) {
+    .header__container-address {
+        display: none;
+    }
 }
 
 .header__address-icon {
@@ -439,10 +477,17 @@ template {
     color: #232629;
 }
 
+
 .header__WhatsApp-icon {
     width: 24px;
     height: 24px;
     padding: 0 48px;
+}
+
+@media screen and (max-width: 1023px) {
+    .header__WhatsApp-icon {
+        padding: 0 24px;
+    }
 }
 
 .booking-button {
@@ -463,6 +508,12 @@ template {
     padding-top: 31px;
 }
 
+@media screen and (max-width: 1023px) {
+    .header__nav {
+        padding-top: 36px;
+    }
+}
+
 .header__link {
     margin-right: 56px;
     font-family: 'Montserrat';
@@ -472,6 +523,13 @@ template {
     line-height: 150%;
     text-decoration: none;
     color: #232629;
+}
+
+@media screen and (max-width: 1023px) {
+    .header__link {
+        margin-right: 48px;
+        font-size: 14px;
+    }
 }
 
 .header__link:hover {
@@ -497,6 +555,18 @@ template {
     color: #232629;
 }
 
+@media screen and (max-width: 1399px) {
+    .hero__title {
+        font-size: 86px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .hero__title {
+        font-size: 48px;
+    }
+}
+
 .hero__span {
     color: #1AB51A;
 }
@@ -514,7 +584,7 @@ template {
 
 .hero__subtitle {
     margin: 16px 0 32px;
-    width: 450px;
+    max-width: 450px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -522,6 +592,7 @@ template {
     line-height: 150%;
     color: #232629;
 }
+
 
 .hero__auto-img {
     position: absolute;
@@ -535,8 +606,52 @@ template {
     top: 250px;
 }
 
+
+
+@media screen and (max-width: 1300px) {
+    .hero__auto-img {
+        left: 460px;
+    }
+
+    .hero__moto-img {
+        left: 950px;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .hero__subtitle {
+        font-size: 14px;
+        max-width: 567px;
+    }
+
+    .hero__company {
+        font-size: 18px;
+        max-width: 531px;
+    }
+
+    .hero__auto-img {
+        left: 50px;
+        top: 334px;
+        width: 673px;
+        height: 318px;
+    }
+
+    .hero__moto-img {
+        width: 342px;
+        height: 343px;
+        top: 372px;
+        left: 490px;
+    }
+}
+
 .car-catalog {
     margin-top: 140px;
+}
+
+@media screen and (max-width: 1023px) {
+    .car-catalog {
+        margin-top: 439px;
+    }
 }
 
 .title {
@@ -569,8 +684,51 @@ template {
     background: #F5F6FB;
 }
 
-.card-catalog__image-auto {
+
+
+.car-catalog__image-auto {
     margin-left: 142px;
+}
+
+@media screen and (max-width: 1399px) {
+    .car-card {
+        width: calc((100vw - 100px) / 2);
+        margin-right: 20px;
+        overflow: hidden;
+    }
+
+    .car-catalog__container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1023px) {
+    .title {
+        font-size: 36px;
+    }
+
+    .car-card {
+        width: calc((100vw - 80px) / 2);
+        margin-right: 0;
+    }
+
+    .car-card:first-of-type {
+        margin-right: 24px;
+    }
+
+    .car-catalog__image-auto {
+        max-width: 362px;
+        max-height: 128px;
+        margin-left: 108px;
+    }
+
+    .car-catalog__container {
+        height: 200px;
+    }
+
+    .car-catalog__card {
+        min-height: 470px;
+    }
 }
 
 .car-catalog__container-title {
@@ -594,11 +752,23 @@ template {
     margin-left: 32px;
 }
 
-.card-catalog__span {
+.car-catalog__span {
     color: #1AB51A;
 }
 
-.card-catalog__card-title {
+@media screen and (max-width: 1023px) {
+    .car-catalog__container-title {
+        margin: 10px 0 0 24px;
+        font-size: 14px;
+    }
+
+    .car-catalog__price {
+        margin: 8px 0 20px 24px;
+        font-size: 20px;
+    }
+}
+
+.car-catalog__card-title {
     margin: 32px 0 24px;
     font-family: 'Unbounded';
     font-style: normal;
@@ -608,7 +778,7 @@ template {
     color: #232629;
 }
 
-.card-catalog__card-subtitle {
+.car-catalog__card-subtitle {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -618,7 +788,7 @@ template {
     margin: 0;
 }
 
-.card-catalog__popup-button {
+.car-catalog__popup-button {
     width: 160px;
     height: 56px;
     background-color: #1AB51A;
@@ -633,9 +803,20 @@ template {
     transition: background-color, ease-in, 0.3s;
 }
 
-.card-catalog__popup-button:hover {
+.car-catalog__popup-button:hover {
     cursor: pointer;
     background-color: #1a911a;
+}
+
+@media screen and (max-width: 1023px) {
+    .car-catalog__card-title {
+        margin: 24px 0 16px;
+        font-size: 20px;
+    }
+
+    .car-catalog__card-subtitle {
+        font-size: 14px;
+    }
 }
 
 .booking-section {
@@ -713,6 +894,34 @@ template {
     color: #232629;
 }
 
+@media screen and (max-width: 1023px) {
+    .title {
+        font-size: 36px;
+    }
+
+    .booking-section__subtitle {
+        font-size: 14px;
+    }
+
+    .booking-section__description {
+        font-size: 14px;
+        margin-top: 32px;
+        margin-bottom: 16px;
+    }
+
+    .booking-section__rules {
+        flex-wrap: wrap;
+    }
+
+    .booking-section__rule-title {
+        font-size: 20px;
+    }
+
+    .booking-section__rule-description {
+        font-size: 14px
+    }
+}
+
 .about-us {
     margin-top: 80px;
 }
@@ -734,6 +943,12 @@ template {
     display: flex;
 }
 
+@media screen and (max-width: 1399px) {
+    .about-us__reasons {
+        justify-content: space-between;
+    }
+}
+
 .about-us__reason {
     position: relative;
     width: 408px;
@@ -741,6 +956,18 @@ template {
     margin-right: 24px;
     background: #F5F6FB;
     border-radius: 16px;
+}
+
+@media screen and (max-width: 1399px) {
+    .about-us__reason {
+        margin: 0;
+        width: 380px;
+    }
+
+    .about-us__subtitle {
+        font-size: 14px;
+        margin-bottom: 32px;
+    }
 }
 
 .about-us__reason-title {
@@ -769,6 +996,34 @@ template {
     left: 38px;
 }
 
+@media screen and (max-width: 1023px) {
+    .about-us {
+        margin-top: 64px;
+    }
+
+    .about-us__reasons {
+        flex-wrap: wrap;
+    }
+
+    .about-us__reason {
+        width: calc((100vw - 84px) / 2);
+        margin-bottom: 24px;
+    }
+
+    .about-us__reason:last-of-type {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .about-us__reason-title {
+        font-size: 20px;
+    }
+
+    .about-us__reason-subtitle {
+        font-size: 14px;
+    }
+}
+
 .contacts {
     margin-top: 80px;
 }
@@ -781,6 +1036,12 @@ template {
     display: flex;
     flex-direction: column;
     align-items: end;
+}
+
+@media screen and (max-width: 1399px) {
+    .contacts__map {
+        width: calc((100vw - 70px));
+    }
 }
 
 
@@ -881,6 +1142,56 @@ template {
     margin-bottom: 24px;
 }
 
+@media screen and (max-width: 1023px) {
+    .contacts__map {
+        width: 100%;
+        height: 780px;
+        background-image: url(62d336ae8930c1ee77d2.png);
+        flex-direction: row;
+        align-items: start;
+
+    }
+
+    .contacts__container {
+        width: 310px;
+        min-height: 244px;
+        margin-top: 32px;
+        margin-right: 24px;
+    }
+
+    .contacts__container:first-of-type {
+        margin-top: 32px;
+        justify-content: center;
+        margin-left: 32px;
+    }
+
+    .contacts__adress-title {
+        font-size: 14px;
+    }
+
+    .contacts__adress-subtitle {
+        font-size: 14px;
+    }
+
+    .contacts__number-title {
+        font-size: 14px;
+        margin-bottom: 8px;
+    }
+
+    .contacts__number-subtitle {
+        font-size: 14px
+    }
+
+    .contacts__container:first-of-type::after {
+        top: 175px;
+        right: 83px;
+    }
+
+    .contacts__info {
+        font-size: 12px;
+    }
+}
+
 .banner {
     background: #F5F6FB;
     border-radius: 16px;
@@ -940,6 +1251,58 @@ template {
     margin-right: 32px;
 }
 
+@media screen and (max-width: 1023px) {
+    .banner {
+        margin: 64px 0;
+    }
+
+    .banner__title {
+        margin-left: 32px;
+        padding-top: 32px;
+        font-size: 36px;
+    }
+
+    .banner__subtitle {
+        margin: 24px 0 32px 32px;
+        font-size: 14px;
+    }
+
+    .banner__container {
+        margin-left: 32px;
+        padding: 0;
+        flex-direction: column;
+        padding-bottom: 32px;
+    }
+
+    .banner::after {
+        width: 316px;
+        height: 354px;
+        background-image: url(15eb12c93f849b86f2cf.png);
+        right: 0;
+        top: -18px;
+    }
+
+    .banner::before {
+        width: 372px;
+        height: 143px;
+        top: 193px;
+        left: 184px;
+    }
+
+    .number {
+        margin: 0;
+
+    }
+
+    .booking-button_place_banner {
+        margin-bottom: 32px;
+    }
+
+    .number_banner {
+        font-style: 14px;
+    }
+}
+
 .footer {}
 
 .footer__container {
@@ -963,7 +1326,7 @@ template {
     height: 18px;
 }
 
-.footer__adress {
+.footer__address {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
@@ -1048,6 +1411,21 @@ template {
     margin: 0 0 32px;
 }
 
+@media screen and (max-width: 1023px) {
+    .footer__address-icon {
+        display: none;
+    }
+
+    .footer__address {
+        display: none;
+    }
+
+    .footer__link {
+        font-size: 14px;
+        margin-right: 48px;
+    }
+}
+
 .popup {
     width: 100%;
     height: 100%;
@@ -1061,7 +1439,16 @@ template {
     opacity: 0;
     transition: opacity 0.15s linear, visibility 0.15s;
     z-index: 5;
+}
 
+@media screen and (max-height: 1280px) {
+    .popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        overflow: scroll;
+    }
 }
 
 .popup_opened {
@@ -1070,6 +1457,7 @@ template {
 }
 
 .popup__container {
+    margin-top: 50px;
     background-color: #FFFFFF;
     color: black;
     width: 1416px;
@@ -1080,6 +1468,12 @@ template {
     margin: 0 auto 0;
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-height: 1280px) {
+    .popup__container__moto {
+        margin-top: 100px;
+    }
 }
 
 .popup__title {
@@ -1103,6 +1497,12 @@ template {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media screen and (max-height: 1400px) {
+    .swiper-slide__img-container {
+        width: 100%;
+    }
 }
 
 .swiper-slide__img {
@@ -1178,10 +1578,21 @@ template {
 }
 
 .swiper-slide__cost-border {
-    width: 197px;
+    width: 48.2%;
     height: 0px;
 
     border: 1px dashed #D4D5DD;
+}
+
+@media screen and (max-width: 1460px) {
+    .swiper-slide__cost-border {
+        width: 44%;
+    }
+
+    .swiper-slide__cost {
+        margin-right: 5px;
+        font-size: 15px;
+    }
 }
 
 .swiper-slide__cost-days {
@@ -1236,8 +1647,15 @@ template {
 }
 
 .embla__slide {
-    flex: 0 0 400px;
+    flex: 0 0 408px;
     margin-right: 22px;
+}
+
+@media screen and (max-width: 1500px) {
+    .embla__slide {
+        flex: 0 0 32.1%;
+        min-height: 345px;
+    }
 }
 
 .embla__viewport {
@@ -1367,7 +1785,7 @@ template {
 }
 
 .swiper-slide__cost-border-big {
-    width: 239px;
+    width: 55%;
     height: 0px;
     border: 1px dashed #D4D5DD;
 
@@ -1410,4 +1828,106 @@ template {
 
 .popup__container_moto {
     height: 1215px;
+}
+
+@media screen and (max-width: 1500px) {
+    .popup__container {
+        width: calc(100vw - 70px);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-height: 1280px) {
+    .popup__container_moto {
+        margin-top: 70px;
+    }
+
+    .popup__title_moto {
+        margin-top: 20px;
+    }
+
+    .embla__next {
+        top: 220px;
+    }
+
+    .embla__prev {
+        top: 220px;
+    }
+}
+
+@media screen and (max-height: 1120px) {
+    .popup__container_moto {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-height: 1050px) {
+    .popup__container_moto {
+        margin-top: 200px;
+    }
+
+    .popup__container {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-height: 1000px) {
+    .popup__container_moto {
+        margin-top: 250px;
+    }
+
+    .popup__container {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-height: 950px) {
+    .popup__container_moto {
+        margin-top: 300px;
+    }
+
+    .popup__container {
+        margin-top: 150px;
+    }
+}
+
+@media screen and (max-height: 900px) {
+    .popup__container_moto {
+        margin-top: 350px;
+    }
+
+    .popup__container {
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-height: 850px) {
+    .popup__container_moto {
+        margin-top: 400px;
+    }
+
+    .popup__container {
+        margin-top: 250px;
+    }
+}
+
+@media screen and (max-height: 800px) and (min-width: 1024px) {
+    .popup__container_moto {
+        margin-top: 450px;
+    }
+
+    .popup__container {
+        margin-top: 300px;
+    }
+}
+
+@media screen and (max-height: 750px) and (min-width: 1024px) {
+    .popup__container_moto {
+        margin-top: 500px;
+    }
+
+    .popup__container {
+        margin-top: 350px;
+    }
 }
