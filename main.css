@@ -1333,7 +1333,7 @@ template {
     right: 130px;
 }
 
-.contacts__container:last-of-type::after {
+.contacts__container:nth-last-of-type(2)::after {
     content: '';
     position: absolute;
     background-image: url(09ab61e4f62f790ac71e.svg);
