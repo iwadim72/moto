@@ -780,6 +780,22 @@ template {
     }
 }
 
+@media screen and (max-width: 699px) {
+    .hero__auto-img {
+        width: 500px;
+        height: 250px;
+        top: 350px;
+        left: 40px;
+    }
+
+    .hero__moto-img {
+        width: 250px;
+        height: 235px;
+        top: 420px;
+        left: 320px;
+    }
+}
+
 @media screen and (max-width: 599px) {
     .hero {
         margin-top: 48px;
@@ -988,6 +1004,12 @@ template {
     }
 }
 
+@media screen and (max-width: 699px) {
+    .car-catalog {
+        margin-top: 339px;
+    }
+}
+
 @media screen and (max-width: 599px) {
     .car-catalog {
         margin-top: 330px;
@@ -1134,6 +1156,7 @@ template {
     .bookins-section__rule {
         display: flex;
         flex-direction: column;
+        min-width: 350px;
     }
 
     .booking-section__rule-title {
@@ -1468,6 +1491,13 @@ template {
     }
 }
 
+@media screen and (max-width: 720px) {
+    .contacts__container:first-of-type::after {
+        left: 200px;
+
+    }
+}
+
 @media screen and (max-width: 599px) {
     .contacts__map {
         background: white;
@@ -1492,6 +1522,7 @@ template {
 
     .contacts__adress-subtitle {
         margin: 8px 0 0 0;
+        max-width: 436px;
     }
 
     .contacts__number-title {
@@ -1654,6 +1685,12 @@ template {
     }
 }
 
+@media screen and (max-width: 720px) {
+    .banner__title {
+        max-width: 500px;
+    }
+}
+
 @media screen and (max-width: 599px) {
     .banner::after {
         display: none;
@@ -1726,7 +1763,6 @@ template {
     margin-left: 36px;
 }
 
-.footer__container-booking {}
 
 .footer__nav {
     margin-top: 40px;
@@ -1805,15 +1841,17 @@ template {
     }
 }
 
+@media screen and (max-width: 710px) {
+    .footer__number {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 599px) {
     .footer__container-logo {
         width: 100%;
         display: flex;
         justify-content: space-between;
-    }
-
-    .footer__number {
-        display: none;
     }
 
     .footer__container {
