@@ -1773,6 +1773,7 @@ template {
     top: 0;
     left: 0;
     align-items: center;
+    justify-items: center;
     display: flex;
     visibility: hidden;
     opacity: 0;
@@ -1782,9 +1783,6 @@ template {
 
 @media screen and (max-height: 1280px) {
     .popup {
-        position: fixed;
-        top: 0;
-        left: 0;
         height: 100%;
         overflow: scroll;
     }
@@ -1796,24 +1794,19 @@ template {
 }
 
 .popup__container {
-    margin-top: 50px;
     background-color: #FFFFFF;
     color: black;
     width: 1416px;
     height: 1042px;
     box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
-    position: relative;
-    margin: 0 auto 0;
+    position: absolute;
+    top: calc((100vh - 1042px) / 2);
+    left: calc((100vw - 1416px) / 2);
     display: flex;
     flex-direction: column;
 }
 
-@media screen and (max-height: 1280px) {
-    .popup__container__moto {
-        margin-top: 100px;
-    }
-}
 
 .popup__title {
     font-family: 'Unbounded';
@@ -2170,10 +2163,6 @@ template {
 }
 
 @media screen and (max-height: 1280px) {
-    .popup__container_moto {
-        margin-top: 70px;
-    }
-
     .popup__title_moto {
         margin-top: 20px;
     }
@@ -2187,87 +2176,11 @@ template {
     }
 }
 
-@media screen and (max-height: 1120px) {
-    .popup__container_moto {
-        margin-top: 150px;
-    }
-}
-
-@media screen and (max-height: 1050px) {
-    .popup__container_moto {
-        margin-top: 200px;
-    }
-
-    .popup__container_auto {
-        margin-top: 50px;
-    }
-}
-
-@media screen and (max-height: 1000px) {
-    .popup__container_moto {
-        margin-top: 250px;
-    }
-
-    .popup__container_auto {
-        margin-top: 100px;
-    }
-}
-
-@media screen and (max-height: 950px) {
-    .popup__container_moto {
-        margin-top: 300px;
-    }
-
-    .popup__container_auto {
-        margin-top: 150px;
-    }
-}
-
-@media screen and (max-height: 900px) {
-    .popup__container_moto {
-        margin-top: 350px;
-    }
-
-    .popup__container_auto {
-        margin-top: 200px;
-    }
-}
-
-@media screen and (max-height: 850px) {
-    .popup__container_moto {
-        margin-top: 400px;
-    }
-
-    .popup__container_auto {
-        margin-top: 250px;
-    }
-}
-
-@media screen and (max-height: 800px) and (min-width: 1024px) {
-    .popup__container_moto {
-        margin-top: 450px;
-    }
-
-    .popup__container_auto {
-        margin-top: 300px;
-    }
-}
-
-@media screen and (max-height: 750px) and (min-width: 1024px) {
-    .popup__container_moto {
-        margin-top: 500px;
-    }
-
-    .popup__container_auto {
-        margin-top: 350px;
-    }
-}
-
 @media screen and (max-width: 1500px) {
     .popup__container {
         width: calc(100vw - 70px);
-        margin-left: 20px;
-        margin-right: 20px;
+        left: calc(((100vw - (100vw - 70px)) / 2));
+        top: 1vh;
     }
 }
 
@@ -2275,8 +2188,8 @@ template {
     .popup__container {
         width: calc(100% - 98px);
         height: 858px;
-        margin-left: 49px;
-        margin-right: 49px;
+        left: calc(((100vw - (100vw - 98px)) / 2));
+        top: 8vh;
     }
 
     .popup__title {
@@ -2401,4 +2314,73 @@ template {
     .embla__prev {
         top: 220px;
     }
+}
+
+@media screen and (max-width: 599px) {
+    .popup__container {
+        width: 100%;
+        margin: 0;
+        left: 0;
+        top: 0;
+        height: auto;
+        border-radius: 0;
+    }
+
+    .embla__next {
+        display: none;
+    }
+
+    .embla__prev {
+        display: none;
+    }
+
+    .embla__slide {
+        flex: 0 0 283px;
+        margin-right: 16px;
+    }
+
+    .popup__title {
+        margin: 24px 0 24px 16px;
+        font-size: 24px;
+    }
+
+    .embla {
+        margin-left: 16px;
+        margin-right: 0;
+    }
+
+    .popup__machine-feed {
+        font-size: 18px;
+        margin-left: 16px;
+    }
+
+    .popup__machine-feed-containers {
+        margin-left: 16px;
+    }
+
+    .popup__machine-feed-container {
+        margin-right: 32px;
+    }
+
+    .popup__machine-feed-cost {
+        font-size: 14px;
+    }
+
+    .popup__machine-feed-notification-container {
+        margin: 18px 0 18px 25px;
+    }
+
+    .popup__machine-feed-notification {
+        font-size: 12px;
+    }
+
+    .popup__machine-feed-containers_moto-plus {
+        flex-wrap: wrap;
+    }
+
+    .popup__machine-feed-containers_moto-plus .popup__machine-feed-container:last-of-type {
+        margin-top: 26px;
+        margin-bottom: 24px;
+    }
+
 }
