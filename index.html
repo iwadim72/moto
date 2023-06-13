@@ -5,24 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="color-scheme" content="only light">
-    <title>Сочи GO</title>
+    <title>Сочи GO | Аренда автомобилей и мотоциклов</title>
+    <meta name="description" content="Быстрая аренда качественных автомобилей и мотоциклов в компании «СочиGO»
+    Передвигайтесь по курорту с ветерком – закажите транспорт прямо сейчас, ведь количество предложений ограничено!">
 <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
 
 <body>
     <div class="body">
         <div class="page" id="page">
             <header class="header" id="header">
-                <div class="header__container">
+                <div class="header__container" itemscope itemtype="https://schema.org/Organization">
                     <div class="header__container-logo">
-                        <img class="logo" src="da3f122cfd4b0dab5457.svg" alt="Логотип">
+                        <meta content="Coчи GO" itemprop="name">
+                        <img class="logo" src="da3f122cfd4b0dab5457.svg" alt="Логотип" itemprop="logo">
                         <div class="header__container-address">
                             <img class="header__address-icon" src="7246ceb38ebcd2f4a466.svg"
                                 alt="Адресс компании">
-                            <p class="header__adress">Сочи, Адлер, Красная поляна</p>
+                            <p class="header__adress" itemprop="address">Сочи, Адлер, Красная поляна</p>
                         </div>
                     </div>
                     <div class="header__container-number">
-                        <p class="number number_header"><a class="link" href="tel:79282168525">+7 (928) 216-85-25</a>
+                        <p class="number number_header"><a class="link" href="tel:79282168525" itemprop="telephone">+7
+                                (928) 216-85-25</a>
                         </p>
                         <a class="link" href="tel:79282168525"><img class="number-mobile_header"
                                 src="587d483575df877ba399.svg"></a>
@@ -37,12 +41,12 @@
                     </div>
                 </div>
 
-                <nav class="header__nav">
-                    <a class="header__link" href="#car-catalog">Автомобили</a>
-                    <a class="header__link" href="#car-catalog">Мотоциклы</a>
-                    <a class="header__link" href="#booking-section">Как забронировать?</a>
-                    <a class="header__link" href="#about-us">Почему&nbsp;мы?</a>
-                    <a class="header__link" href="#contacts">Контакты</a>
+                <nav class="header__nav" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <a class="header__link" href="#car-catalog" itemprop="itemListElement">Автомобили</a>
+                    <a class="header__link" href="#car-catalog" itemprop="itemListElement">Мотоциклы</a>
+                    <a class="header__link" href="#booking-section" itemprop="itemListElement">Как забронировать?</a>
+                    <a class="header__link" href="#about-us" itemprop="itemListElement">Почему&nbsp;мы?</a>
+                    <a class="header__link" href="#contacts" itemprop="itemListElement">Контакты</a>
                 </nav>
 
                 <div class="burger">
@@ -53,12 +57,15 @@
                             src="7246ceb38ebcd2f4a466.svg" alt="Адресс компании">
                         <p class="header__adress burger__adress">Сочи, Адлер, Красная поляна</p>
                     </div>
-                    <nav class="burger__links">
-                        <a class="header__link burger__link" href="#car-catalog">Автомобили</a>
-                        <a class="header__link burger__link" href="#car-catalog">Мотоциклы</a>
-                        <a class="header__link burger__link" href="#booking-section">Как забронировать?</a>
-                        <a class="header__link burger__link" href="#about-us">Почему мы?</a>
-                        <a class="header__link burger__link" href="#contacts">Контакты</a>
+                    <nav class="burger__links" itemscope itemtype="https://schema.org/BreadcrumbList">
+                        <a class="header__link burger__link" href="#car-catalog"
+                            itemprop="itemListElement">Автомобили</a>
+                        <a class="header__link burger__link" href="#car-catalog">
+                            itemprop="itemListElement"Мотоциклы</a>
+                        <a class="header__link burger__link" href="#booking-section" itemprop="itemListElement">Как
+                            забронировать?</a>
+                        <a class="header__link burger__link" href="#about-us" itemprop="itemListElement">Почему мы?</a>
+                        <a class="header__link burger__link" href="#contacts" itemprop="itemListElement">Контакты</a>
                     </nav>
 
                     <div class="burger__number-container">
@@ -241,14 +248,17 @@
                         <div class="embla">
                             <div class="embla__viewport">
                                 <div class="embla__container">
-                                    <div class="embla__slide">
+                                    <div class="embla__slide" itemprop="offers" itemscope
+                                        itemtype="https://schema.org/Offer"
+                                        itemtype="https://schema.org/AggregateOffer">
                                         <div class="swiper-slide__img-container">
                                             <img class="swiper-slide__img" src="0af84c89be6514ea22b0.png"
                                                 alt="kia-k5">
                                         </div>
-                                        <h4 class="swiper-slide__title">KIA K5</h4>
-                                        <p class="swiper-slide__subtitle">2.0 л, 150 л.с.</p>
-                                        <button class="booking-button" type="button">Забронировать</button>
+                                        <h4 class="swiper-slide__title" itemprop="name">KIA K5
+                                        </h4>
+                                        <p class="swiper-slide__subtitle" itemprop="description">2.0 л, 150 л.с.</p>
+                                        <button class="booking-button booking-open" type="button">Забронировать</button>
                                         <h5 class="swiper-slide__cost-title">Стоимость</h5>
                                         <div class="swiper-slide__cost-container">
                                             <p class="swiper-slide__cost">5 000 ₽ / сут.</p>
@@ -263,7 +273,7 @@
                                         </div>
 
                                         <div class="swiper-slide__cost-container">
-                                            <p class="swiper-slide__cost">4 800 ₽ / сут.</p>
+                                            <p class="swiper-slide__cost" itemprop="price">4 800 ₽ / сут.</p>
                                             <div class="swiper-slide__cost-border"></div>
                                             <p class="swiper-slide__cost-days">5 и более</p>
                                         </div>
@@ -274,14 +284,16 @@
                                     </div>
 
 
-                                    <div class="embla__slide">
+                                    <div class="embla__slide" itemprop="offers" itemscope
+                                        itemtype="https://schema.org/Offer"
+                                        itemtype="https://schema.org/AggregateOffer">
                                         <div class="swiper-slide__img-container">
                                             <img class="swiper-slide__img" src="c954ec55abf4123a42b3.png"
                                                 alt="kia-rio">
                                         </div>
-                                        <h4 class="swiper-slide__title">KIA RIO</h4>
-                                        <p class="swiper-slide__subtitle">1.6 л, 90.4 л.с.</p>
-                                        <button type="button" class="booking-button">Забронировать</button>
+                                        <h4 class="swiper-slide__title" itemprop="name">KIA RIO</h4>
+                                        <p class="swiper-slide__subtitle" itemprop="description">1.6 л, 90.4 л.с.</p>
+                                        <button type="button" class="booking-button booking-open">Забронировать</button>
                                         <h5 class="swiper-slide__cost-title">Стоимость</h5>
                                         <div class="swiper-slide__cost-container">
 
@@ -297,7 +309,7 @@
                                         </div>
 
                                         <div class="swiper-slide__cost-container">
-                                            <p class="swiper-slide__cost">2 600 ₽ / сут.</p>
+                                            <p class="swiper-slide__cost" itemprop="price">2 600 ₽ / сут.</p>
                                             <div class="swiper-slide__cost-border"></div>
                                             <p class="swiper-slide__cost-days">5 и более</p>
                                         </div>
@@ -307,14 +319,16 @@
                                     </div>
 
 
-                                    <div class="embla__slide">
+                                    <div class="embla__slide" itemprop="offers" itemscope
+                                        itemtype="https://schema.org/Offer"
+                                        itemtype="https://schema.org/AggregateOffer">
                                         <div class="swiper-slide__img-container">
                                             <img class="swiper-slide__img" src="0af84c89be6514ea22b0.png"
                                                 alt="kia-k5">
                                         </div>
-                                        <h4 class="swiper-slide__title">KIA K5</h4>
-                                        <p class="swiper-slide__subtitle">2.5 л, 194 л.с.</p>
-                                        <button class="booking-button" type="button">Забронировать</button>
+                                        <h4 class="swiper-slide__title" itemprop="name">KIA K5</h4>
+                                        <p class="swiper-slide__subtitle" itemprop="description">2.5 л, 194 л.с.</p>
+                                        <button class="booking-button booking-open" type="button">Забронировать</button>
                                         <h5 class="swiper-slide__cost-title">Стоимость</h5>
                                         <div class="swiper-slide__cost-container">
 
@@ -330,7 +344,7 @@
                                         </div>
 
                                         <div class="swiper-slide__cost-container">
-                                            <p class="swiper-slide__cost">4 800 ₽ / сут.</p>
+                                            <p class="swiper-slide__cost" itemprop="price">4 800 ₽ / сут.</p>
                                             <div class="swiper-slide__cost-border"></div>
                                             <p class="swiper-slide__cost-days">5 и более</p>
                                         </div>
@@ -341,13 +355,15 @@
                                     </div>
 
                                     <div class="embla__slide">
-                                        <div class="swiper-slide__img-container">
+                                        <div class="swiper-slide__img-container" itemprop="offers" itemscope
+                                            itemtype="https://schema.org/Offer"
+                                            itemtype="https://schema.org/AggregateOffer">
                                             <img class="swiper-slide__img" src="c954ec55abf4123a42b3.png"
                                                 alt="kia-rio">
                                         </div>
-                                        <h4 class="swiper-slide__title">KIA RIO</h4>
-                                        <p class="swiper-slide__subtitle">1.6 л, 90.4 л.с.</p>
-                                        <button type="button" class="booking-button">Забронировать</button>
+                                        <h4 class="swiper-slide__title" itemprop="name">KIA RIO</h4>
+                                        <p class="swiper-slide__subtitle" itemprop="description">1.6 л, 90.4 л.с.</p>
+                                        <button type="button" class="booking-button booking-open">Забронировать</button>
                                         <h5 class="swiper-slide__cost-title">Стоимость</h5>
                                         <div class="swiper-slide__cost-container">
 
@@ -363,7 +379,7 @@
                                         </div>
 
                                         <div class="swiper-slide__cost-container">
-                                            <p class="swiper-slide__cost">2 600 ₽ / сут.</p>
+                                            <p class="swiper-slide__cost" itemprop="price">2 600 ₽ / сут.</p>
                                             <div class="swiper-slide__cost-border"></div>
                                             <p class="swiper-slide__cost-days">5 и более</p>
                                         </div>
@@ -408,13 +424,16 @@
                         <div class="embla embla_moto">
                             <div class="embla__viewport embla__viewport_moto">
                                 <div class="embla__container embla__container_moto">
-                                    <div class="embla__slide">
+                                    <div class="embla__slide" itemprop="offers" itemscope
+                                        itemtype="https://schema.org/Offer"
+                                        itemtype="https://schema.org/AggregateOffer">
                                         <div class="swiper-slide__img-container">
                                             <div class="swiper-slide__img swiper-slide__img_K1600GT"></div>
                                         </div>
-                                        <h4 class="swiper-slide__title">BMW <br> K1600GT</h4>
-                                        <p class="swiper-slide__subtitle">1649 куб.см., 160 л.с.</p>
-                                        <button class="booking-button" type="button">Забронировать</button>
+                                        <h4 class="swiper-slide__title" itemprop="name">BMW <br> K1600GT</h4>
+                                        <p class="swiper-slide__subtitle" itemprop="description">1649 куб.см., 160 л.с.
+                                        </p>
+                                        <button class="booking-button booking-open" type="button">Забронировать</button>
                                         <h5 class="swiper-slide__cost-title">Стоимость</h5>
                                         <div class="swiper-slide__cost-container">
                                             <p class="swiper-slide__cost">15&nbsp;000&nbsp;₽</p>
@@ -423,7 +442,8 @@
                                         </div>
 
                                         <div class="swiper-slide__cost-container">
-                                            <p class="swiper-slide__cost">17&nbsp;000&nbsp;₽&nbsp;/&nbsp;сут.</p>
+                                            <p class="swiper-slide__cost">
+                                                17&nbsp;000&nbsp;₽&nbsp;/&nbsp;сут.</p>
                                             <div class="swiper-slide__cost-border"></div>
                                             <p class="swiper-slide__cost-days">1-&#8209;2&nbsp;дня</p>
                                         </div>
@@ -435,7 +455,7 @@
                                         </div>
 
                                         <div class="swiper-slide__cost-container">
-                                            <p class="swiper-slide__cost">15 000 ₽ / сут.</p>
+                                            <p class="swiper-slide__cost" itemprop="price">15 000 ₽ / сут.</p>
                                             <div class="swiper-slide__cost-border"></div>
                                             <p class="swiper-slide__cost-days">5 и более</p>
                                         </div>
@@ -446,13 +466,17 @@
                                     </div>
 
 
-                                    <div class="embla__slide">
+                                    <div class="embla__slide" itemprop="offers" itemscope
+                                        itemtype="https://schema.org/Offer"
+                                        itemtype="https://schema.org/AggregateOffer">
                                         <div class="swiper-slide__img-container">
                                             <div class="swiper-slide__img swiper-slide__img_Harley-Davidson"></div>
                                         </div>
-                                        <h4 class="swiper-slide__title">Harley-Davidson Pan&nbsp;America 1250</h4>
-                                        <p class="swiper-slide__subtitle">1250 куб.см, 150 л.с.</p>
-                                        <button type="button" class="booking-button">Забронировать</button>
+                                        <h4 class="swiper-slide__title" itemprop="name">Harley-Davidson Pan&nbsp;America
+                                            1250</h4>
+                                        <p class="swiper-slide__subtitle" itemprop="description">1250 куб.см, 150 л.с.
+                                        </p>
+                                        <button type="button" class="booking-button booking-open">Забронировать</button>
                                         <h5 class="swiper-slide__cost-title">Стоимость</h5>
                                         <div class="swiper-slide__cost-container">
 
@@ -474,7 +498,7 @@
                                         </div>
 
                                         <div class="swiper-slide__cost-container">
-                                            <p class="swiper-slide__cost">15 000 ₽ / сут.</p>
+                                            <p class="swiper-slide__cost" itemprop="price">15 000 ₽ / сут.</p>
                                             <div class="swiper-slide__cost-border"></div>
                                             <p class="swiper-slide__cost-days">5 и более</p>
                                         </div>
@@ -484,13 +508,15 @@
                                     </div>
 
 
-                                    <div class="embla__slide">
+                                    <div class="embla__slide" itemprop="offers" itemscope
+                                        itemtype="https://schema.org/Offer"
+                                        itemtype="https://schema.org/AggregateOffer">
                                         <div class="swiper-slide__img-container">
                                             <div class="swiper-slide__img swiper-slide__img_G310GS"></div>
                                         </div>
-                                        <h4 class="swiper-slide__title">BMW <br>G310GS</h4>
-                                        <p class="swiper-slide__subtitle">313 куб.см, 34 л.с.</p>
-                                        <button class="booking-button" type="button">Забронировать</button>
+                                        <h4 class="swiper-slide__title" itemprop="name">BMW <br>G310GS</h4>
+                                        <p class="swiper-slide__subtitle" itemprop="description">313 куб.см, 34 л.с.</p>
+                                        <button class="booking-button booking-open" type="button">Забронировать</button>
                                         <h5 class="swiper-slide__cost-title">Стоимость</h5>
                                         <div class="swiper-slide__cost-container">
 
@@ -512,7 +538,7 @@
                                         </div>
 
                                         <div class="swiper-slide__cost-container">
-                                            <p class="swiper-slide__cost">15 000 ₽ / сут.</p>
+                                            <p class="swiper-slide__cost" itemprop="price">15 000 ₽ / сут.</p>
                                             <div class="swiper-slide__cost-border"></div>
                                             <p class="swiper-slide__cost-days">5 и более</p>
                                         </div>
@@ -522,15 +548,17 @@
                                         <div class="swiper-pagination"></div>
                                     </div>
 
-                                    <div class="embla__slide">
+                                    <div class="embla__slide" itemprop="offers" itemscope
+                                        itemtype="https://schema.org/Offer"
+                                        itemtype="https://schema.org/AggregateOffer">
                                         <div class="swiper-slide__img-container">
                                             <div class="swiper-slide__img-container">
                                                 <div class="swiper-slide__img swiper-slide__img_CFMOTO"></div>
                                             </div>
                                         </div>
-                                        <h4 class="swiper-slide__title">CFMOTO<br>250NK</h4>
-                                        <p class="swiper-slide__subtitle">249 куб.см, 26 л.с.</p>
-                                        <button type="button" class="booking-button">Забронировать</button>
+                                        <h4 class="swiper-slide__title" itemprop="name">CFMOTO<br>250NK</h4>
+                                        <p class="swiper-slide__subtitle" itemprop="description">249 куб.см, 26 л.с.</p>
+                                        <button type="button" class="booking-button booking-open">Забронировать</button>
                                         <h5 class="swiper-slide__cost-title">Стоимость</h5>
                                         <div class="swiper-slide__cost-container">
 
@@ -603,48 +631,81 @@
                     </div>
                 </div>
 
-
-            </main>
-            <footer class="footer">
-                <div class="footer__container">
-                    <div class="footer__container-logo">
-                        <img class="logo" src="da3f122cfd4b0dab5457.svg" alt="Логотип">
-                        <div class="footer__container-address">
-                            <img class="footer__address-icon" src="7246ceb38ebcd2f4a466.svg"
-                                alt="Адресс компании">
-                            <p class="footer__address">Сочи, Адлер, Красная поляна</p>
-                            <p class="footer__number"><a class="link" href="tel:79282168525">+7 (928) 216-85-25</a></p>
-                            <a class="link" href="tel:79282168525"><img class="number-mobile_footer"
-                                    src="587d483575df877ba399.svg"></a>
-                            <a class="link link__whatsapp_footer" href="https://wa.me/79282168525" target="_blank"><img
-                                    class="footer__WhatsApp-icon" src="7149c5c275f88e39d833.svg"
-                                    alt="Ссылка в WhatsApp"></a>
-                        </div>
-                    </div>
-                    <div class="footer__container-booking">
-                        <button class="booking-button">Забронировать</button>
+                <div class="popup popup__booking">
+                    <div class="popup__booking-container">
+                        <h3 class="booking__title">Бронирование</h3>
+                        <form class="booking__form">
+                            <label class="form__field">
+                                <input class="form__input input-name" type="text" minlength="2" maxlength="30"
+                                    placeholder="Ваше имя" required>
+                            </label>
+                            <label class="form__field">
+                                <input class="form__input input-number" type="number" placeholder="Номер телефона"
+                                    required>
+                            </label>
+                            <label class="form__field">
+                                <p class="form__field-description" required>Даты предполагаемоего бронирования:
+                                </p>
+                                <input class="form__input input-date-start" type="date" placeholder="Дата начала аренды"
+                                    required>
+                            </label>
+                            <label>
+                                <input class="form__input input-date-end" type="date"
+                                    placeholder="Дата окончания аренды">
+                            </label>
+                            <button type="button" class="popup__close"></button>
+                            <button type="submit" class="booking-button form__submit">Отправить</button>
+                        </form>
                     </div>
                 </div>
-
-                <nav class="footer__nav">
-                    <div>
-                        <a class="footer__link" href="#car-catalog">Автомобили</a>
-                        <a class="footer__link" href="#car-catalog">Мотоциклы</a>
-                        <a class="footer__link">Форма&nbsp;бронирования</a>
-                        <a class="footer__link">Поддержка</a>
-                    </div>
-                    <div class="footer__nav-up-container">
-                        <a class="footer__link" href="#header">Наверх</a>
-                    </div>
-                </nav>
-
-                <div class="footer__border"></div>
-
-                <p class="footer__company">
-                    © СочиGO, Inc. 2023. По курорту с ветерком!
-                </p>
-            </footer>
         </div>
+
+
+        </main>
+        <footer class="footer">
+            <div class="footer__container" itemscope itemtype="https://schema.org/Organization">
+                <div class="footer__container-logo">
+                    <meta itemprop="address" content="Таврическая улица, 2/2, посёлок городского типа
+                        Сириус">
+                    <meta itemprop="name" content="Сочи GO">
+                    <img class="logo" src="da3f122cfd4b0dab5457.svg" alt="Логотип" itemprop="logo">
+                    <div class="footer__container-address">
+                        <img class="footer__address-icon" src="7246ceb38ebcd2f4a466.svg"
+                            alt="Адресс компании">
+                        <p class="footer__address">Сочи, Адлер, Красная поляна</p>
+                        <p class="footer__number"><a class="link" href="tel:79282168525" itemprop="telephone">+7
+                                (928) 216-85-25</a></p>
+                        <a class="link" href="tel:79282168525"><img class="number-mobile_footer"
+                                src="587d483575df877ba399.svg"></a>
+                        <a class="link link__whatsapp_footer" href="https://wa.me/79282168525" target="_blank"><img
+                                class="footer__WhatsApp-icon" src="7149c5c275f88e39d833.svg"
+                                alt="Ссылка в WhatsApp"></a>
+                    </div>
+                </div>
+                <div class="footer__container-booking">
+                    <button class="booking-button">Забронировать</button>
+                </div>
+            </div>
+
+            <nav class="footer__nav" itemscope itemtype="https://schema.org/BreadcrumbList">
+                <div>
+                    <a class="footer__link" href="#car-catalog" itemprop="itemListElement">Автомобили</a>
+                    <a class="footer__link" href="#car-catalog" itemprop="itemListElement">Мотоциклы</a>
+                    <a class="footer__link" itemprop="itemListElement">Форма&nbsp;бронирования</a>
+                    <a class="footer__link" itemprop="itemListElement">Поддержка</a>
+                </div>
+                <div class="footer__nav-up-container">
+                    <a class="footer__link" href="#header">Наверх</a>
+                </div>
+            </nav>
+
+            <div class="footer__border"></div>
+
+            <p class="footer__company">
+                © СочиGO, Inc. 2023. По курорту с ветерком!
+            </p>
+        </footer>
+    </div>
     </div>
 </body>
 
