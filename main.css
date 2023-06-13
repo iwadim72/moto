@@ -362,11 +362,15 @@ template {
 /*!**************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[2].use[1]!./node_modules/postcss-loader/dist/cjs.js!./src/styles/index.css (2) ***!
   \**************************************************************************************************************************************************/
+body {
+    background-color: white;
+}
+
 .body {
     height: 100%;
     width: 100%;
     position: relative;
-    overflow-x: hidden
+    overflow-x: hidden;
 }
 
 .page {
@@ -398,6 +402,13 @@ template {
     }
 }
 
+@media screen and (max-width: 599px) and (min-width: 380px) {
+    .page {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
 
 .header {
     margin-top: 32px;
@@ -415,7 +426,7 @@ template {
     object-fit: contain;
     background-size: cover;
     aspect-ratio: 1/0.5;
-    z-index: -5;
+    z-index: -1;
 }
 
 
