@@ -10,8 +10,7 @@
     Передвигайтесь по курорту с ветерком – закажите транспорт прямо сейчас, ведь количество предложений ограничено!">
     <link type="image/x-icon" href="/favicon.png" rel="shortcut icon">
     <link type="Image/x-icon" href="/favicon.png" rel="icon">
-    <script
-        src="https://www.google.com/recaptcha/enterprise.js?render=6LdJQ5QmAAAAAHJMvPsEwvpmigdEIs18vQ-ifvtS"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 <script defer src="main.js"></script><link href="main.css" rel="stylesheet"></head>
 
 <body>
@@ -643,7 +642,7 @@
                 <div class="popup popup__booking">
                     <div class="popup__booking-container">
                         <h3 class="booking__title">Бронирование</h3>
-                        <form class="booking__form">
+                        <form class="booking__form" method="post">
                             <label class="form__field">
                                 <input class="form__input input-name" type="text" minlength="2" maxlength="30"
                                     placeholder="Ваше имя" required>
@@ -660,7 +659,7 @@
                             </label>
                             <button type="button" class="popup__close"></button>
 
-                            <div class="g-recaptcha" data-sitekey="6LdJQ5QmAAAAAHJMvPsEwvpmigdEIs18vQ-ifvtS"
+                            <div class="g-recaptcha" data-sitekey="6LeHTJUmAAAAAKZZUdsbz_HYMvqLMdgY21LrI_Do"
                                 data-callback="verifyCaptcha"></div>
 
                             <div id="g-recaptcha-error"></div>
@@ -722,7 +721,8 @@
     </div>
     </div>
     <script>
-        var response = grecaptcha.getResponse();
+        // var response = grecaptcha.getResponse();
+        console.log(grecaptcha.getResponse());
         function submitUserForm() {
             if (response.length == 0) {
                 document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
