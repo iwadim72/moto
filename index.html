@@ -642,7 +642,7 @@
                 <div class="popup popup__booking">
                     <div class="popup__booking-container">
                         <h3 class="booking__title">Бронирование</h3>
-                        <form class="booking__form" method="post">
+                        <form class="booking__form">
                             <label class="form__field">
                                 <input class="form__input input-name" type="text" minlength="2" maxlength="30"
                                     placeholder="Ваше имя" required>
@@ -658,11 +658,6 @@
                                     required>
                             </label>
                             <button type="button" class="popup__close"></button>
-
-                            <div class="g-recaptcha" data-sitekey="6LeHTJUmAAAAAKZZUdsbz_HYMvqLMdgY21LrI_Do"
-                                data-callback="verifyCaptcha"></div>
-
-                            <div id="g-recaptcha-error"></div>
                             <button type="submit" class="booking-button form__submit">Отправить</button>
                         </form>
                     </div>
@@ -720,21 +715,6 @@
         </div>
     </div>
     </div>
-    <script>
-        var response = grecaptcha.getResponse();
-        function submitUserForm() {
-            if (response.length == 0) {
-                document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
-                return false;
-            }
-            return true;
-        }
-
-        function verifyCaptcha(token) {
-            recaptcha_response = token;
-            document.getElementById('g-recaptcha-error').innerHTML = '';
-        }
-    </script>
 </body>
 
 </html>
