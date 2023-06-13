@@ -721,8 +721,7 @@
     </div>
     </div>
     <script>
-        // var response = grecaptcha.getResponse();
-        console.log(grecaptcha.getResponse());
+        var response = grecaptcha.getResponse();
         function submitUserForm() {
             if (response.length == 0) {
                 document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
