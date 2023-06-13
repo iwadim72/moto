@@ -888,6 +888,16 @@ body {
 
 }
 
+@media screen and (max-width: 330px) {
+    .hero__auto-img {
+        top: 500px;
+    }
+
+    .hero__moto-img {
+        top: 550px;
+    }
+}
+
 .car-catalog {
     margin-top: 140px;
 }
