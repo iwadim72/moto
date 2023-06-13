@@ -510,12 +510,16 @@ body {
 .header__WhatsApp-icon {
     width: 24px;
     height: 24px;
-    padding: 0 48px;
 }
 
+.link__whatsapp_header {
+    margin: 0 48px;
+}
+
+
 @media screen and (max-width: 1023px) {
-    .header__WhatsApp-icon {
-        padding: 0 24px;
+    .link__whatsapp_header {
+        margin: 0 24px;
     }
 }
 
@@ -589,7 +593,6 @@ body {
         display: none;
     }
 
-    .header__WhatsApp-icon {}
 
     .booking-button_header {
         display: none;
@@ -665,6 +668,10 @@ body {
         background-image: url(0f0dcb8ac49176167556.svg);
         background-position: center;
         background-color: white
+    }
+
+    .burger__WhatsApp-icon {
+        margin-left: 20px;
     }
 }
 
@@ -798,6 +805,8 @@ body {
     }
 }
 
+
+
 @media screen and (max-width: 699px) {
     .hero__auto-img {
         width: 500px;
@@ -811,6 +820,16 @@ body {
         height: 235px;
         top: 420px;
         left: 320px;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .hero__auto-img {
+        top: 450px;
+    }
+
+    .hero__moto-img {
+        top: 500px;
     }
 }
 
@@ -850,6 +869,17 @@ body {
         top: 480px;
         left: 226px;
     }
+}
+
+@media screen and (max-width: 599px) and (min-width: 540px) {
+    .hero__auto-img {
+        top: 400px;
+    }
+
+    .hero__moto-img {
+        top: 430px;
+    }
+
 }
 
 .car-catalog {
@@ -1336,11 +1366,21 @@ body {
 .contacts__map {
     width: 1272px;
     height: 640px;
-    background-image: url(f603f786e89831e7d484.svg);
+    background-image: url(d16843e9485044c50f0b.png);
+    background-size: cover;
+    position: relative;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-items: end;
+}
+
+.contacts__map-link {
+    width: 350px;
+    height: 200px;
+    position: absolute;
+    top: 220px;
+    left: 300px;
 }
 
 @media screen and (max-width: 1399px) {
@@ -1451,10 +1491,16 @@ body {
     .contacts__map {
         width: 100%;
         height: 780px;
-        background-image: url(62d336ae8930c1ee77d2.png);
+        background-image: url(c5e8a721059f3564642b.png);
         flex-direction: row;
         align-items: start;
+    }
 
+    .contacts__map-link {
+        width: 390px;
+        height: 300px;
+        top: 440px;
+        left: 130px;
     }
 
     .contacts__container {
@@ -1516,6 +1562,12 @@ body {
     }
 }
 
+@media screen and (max-width: 638px) {
+    .contacts__container:first-of-type::after {
+        top: 195px;
+    }
+}
+
 @media screen and (max-width: 599px) {
     .contacts__map {
         background: white;
@@ -1552,7 +1604,7 @@ body {
     }
 
     .contacts__container:first-of-type::after {
-        top: 121px;
+        top: 120px;
         left: 175px;
 
     }
@@ -1562,8 +1614,8 @@ body {
 
     }
 
-    .contacts__container:nth-child(2)::after {
-        top: 0;
+    .contacts__container:nth-of-type(2)::after {
+        top: 10px;
         left: 0;
         content: '';
         position: absolute;
@@ -1586,9 +1638,40 @@ body {
     .contacts__map_mobile {
         width: 100%;
         aspect-ratio: 1/1.1;
-        background-image: url(62d336ae8930c1ee77d2.png);
-        background-size: contain;
+        background-image: url(c5e8a721059f3564642b.png);
+        background-size: 600px;
+        background-position: center;
+        position: relative;
         border-radius: 16px;
+        background-repeat: no-repeat;
+    }
+
+    .contacts__map-link {
+        display: none;
+    }
+
+    .contacts__map-link_mobile {
+        position: absolute;
+        display: block;
+        top: 300px;
+        left: 120px;
+        width: 180px;
+        height: 100px;
+    }
+
+}
+
+@media screen and (max-width: 499px) {
+    .contacts__map-link_mobile {
+        top: 200px;
+        left: 100px;
+    }
+}
+
+@media screen and (max-width: 399px) {
+    .contacts__map-link_mobile {
+        top: 150px;
+        left: 50px;
     }
 }
 
@@ -1778,6 +1861,10 @@ body {
 .footer__WhatsApp-icon {
     width: 24px;
     height: 24px;
+    margin-right: 10px;
+}
+
+.link__whatsapp_footer {
     margin-left: 36px;
 }
 
@@ -1880,7 +1967,7 @@ body {
         margin-top: 24px;
     }
 
-    .footer__WhatsApp-icon {
+    .link__whatsapp_footer {
         margin-left: 26px;
     }
 
