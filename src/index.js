@@ -109,7 +109,7 @@ const popupBooking = document.querySelector('.popup__booking');
 const popupBookingOpenButtons = document.querySelectorAll('.booking-open');
 
 
-console.log(popupBookingOpenButtons);
+
 
 popupBookingOpenButtons.forEach((button) => {
     button.addEventListener('click', (evt) => {
@@ -131,13 +131,25 @@ const formBooking = popupBooking.querySelector('.booking__form')
 formBooking.addEventListener('submit', (evt) => {
     handleFormSubmit(evt);
 });
-console.log(formBooking)
+
 
 let moto
 
+const reg = /^\+?[78][-\(]?\d{3}\)?-?\d{3}-?\d{2}-?\d{2}$/
+
 const handleFormSubmit = (evt) => {
     evt.preventDefault();
-    console.log('окей');
+
+    var response = grecaptcha.getResponse();
+    if (response.length == 0) {
+        document.getElementById('g-recaptcha-error').innerHTML = '<span style="color:red;">This field is required.</span>';
+        return false;
+    }
+
+    if (!reg.test(popupBooking.querySelector('.input-number').value)) {
+        popupBooking.querySelector('.input-number').classList.add('form__input-error')
+        return false;
+    }
 
     let name = popupBooking.querySelector('.input-name').value;
     let number = popupBooking.querySelector('.input-number').value;
@@ -151,10 +163,6 @@ const handleFormSubmit = (evt) => {
         .catch(console.error)
 }
 
-// handleFormSubmit()
-
-
-
-
-
-
+function verifyCaptcha() {
+    document.getElementById('g-recaptcha-error').innerHTML = '';
+}

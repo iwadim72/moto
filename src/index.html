@@ -8,6 +8,9 @@
     <title>Сочи GO | Аренда автомобилей и мотоциклов</title>
     <meta name="description" content="Быстрая аренда качественных автомобилей и мотоциклов в компании «СочиGO»
     Передвигайтесь по курорту с ветерком – закажите транспорт прямо сейчас, ведь количество предложений ограничено!">
+    <link type="image/x-icon" href="/favicon-small.ico" rel="shortcut icon">
+    <link type="Image/x-icon" href="/favicon.ico" rel="icon">
+    <script src="https://www.google.com/recaptcha/api.js"></script>
 </head>
 
 <body>
@@ -61,8 +64,8 @@
                     <nav class="burger__links" itemscope itemtype="https://schema.org/BreadcrumbList">
                         <a class="header__link burger__link" href="#car-catalog"
                             itemprop="itemListElement">Автомобили</a>
-                        <a class="header__link burger__link" href="#car-catalog">
-                            itemprop="itemListElement"Мотоциклы</a>
+                        <a class="header__link burger__link" href="#car-catalog" itemprop="itemListElement">Мотоциклы
+                        </a>
                         <a class="header__link burger__link" href="#booking-section" itemprop="itemListElement">Как
                             забронировать?</a>
                         <a class="header__link burger__link" href="#about-us" itemprop="itemListElement">Почему мы?</a>
@@ -639,14 +642,13 @@
                 <div class="popup popup__booking">
                     <div class="popup__booking-container">
                         <h3 class="booking__title">Бронирование</h3>
-                        <form class="booking__form">
+                        <form class="booking__form" method="post">
                             <label class="form__field">
                                 <input class="form__input input-name" type="text" minlength="2" maxlength="30"
                                     placeholder="Ваше имя" required>
                             </label>
                             <label class="form__field">
-                                <input class="form__input input-number" type="number" placeholder="Номер телефона"
-                                    required>
+                                <input class="form__input input-number" type="tel" placeholder="Номер телефона">
                             </label>
                             <label class="form__field">
                                 <p class="form__field-description" required>Дата предполагаемоего бронирования:
@@ -655,6 +657,11 @@
                                     required>
                             </label>
                             <button type="button" class="popup__close"></button>
+
+                            <div class="g-recaptcha" data-sitekey="6LejcJUmAAAAAINyLZ02U-mFp5hFHHBd4x7X5XIt"
+                                data-callback="verifyCaptcha"></div>
+
+                            <div id="g-recaptcha-error"></div>
                             <button type="submit" class="booking-button form__submit">Отправить</button>
                         </form>
                     </div>
@@ -693,8 +700,10 @@
                     <div>
                         <a class="footer__link" href="#car-catalog" itemprop="itemListElement">Автомобили</a>
                         <a class="footer__link" href="#car-catalog" itemprop="itemListElement">Мотоциклы</a>
-                        <a class="footer__link" itemprop="itemListElement">Форма&nbsp;бронирования</a>
-                        <a class="footer__link" itemprop="itemListElement">Поддержка</a>
+                        <a class="footer__link" itemprop="itemListElement"
+                            href="#car-catalog">Форма&nbsp;бронирования</a>
+                        <a class="footer__link" itemprop="itemListElement" href="https://wa.me/79282168525"
+                            target="_blank">Поддержка</a>
                     </div>
                     <div class="footer__nav-up-container">
                         <a class="footer__link" href="#header">Наверх</a>

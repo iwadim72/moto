@@ -531,6 +531,16 @@ body {
 
 }
 
+@media screen and (max-width: 330px) {
+    .hero__auto-img {
+        top: 500px;
+    }
+
+    .hero__moto-img {
+        top: 550px;
+    }
+}
+
 .car-catalog {
     margin-top: 140px;
 }
@@ -1747,6 +1757,10 @@ body {
     color: #232629;
 }
 
+.form__input-error {
+    border-color: red;
+}
+
 .form__submit {
     margin-top: 40px;
     width: 100%;
@@ -2140,6 +2154,12 @@ body {
 
 @media screen and (max-width: 1921px) {
     .popup__container_moto {
+        top: 1vh;
+    }
+}
+
+@media screen and (max-width: 1700px) and (max-height: 1000px) {
+    .popup__container {
         top: 1vh;
     }
 }
