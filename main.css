@@ -2114,6 +2114,10 @@ body {
     color: #232629;
 }
 
+.form__input-error {
+    border-color: red;
+}
+
 .form__submit {
     margin-top: 40px;
     width: 100%;
