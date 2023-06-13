@@ -2110,6 +2110,35 @@ body {
     margin-bottom: 25px;
 }
 
+@media screen and (max-width: 499px) {
+    .popup__booking-container {
+        width: 100%;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .form__input {
+        min-width: 100%;
+    }
+
+    .booking__title {
+        margin-top: 22px;
+        font-size: 20px;
+        margin-left: 30px;
+    }
+
+    .booking__form {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .form__field-description {
+        font-size: 15px;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+
 .popup__title {
     font-family: 'Unbounded';
     font-style: normal;
