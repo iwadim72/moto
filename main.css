@@ -370,7 +370,7 @@ body {
     height: 100%;
     width: 100%;
     background-color: white;
-    background-image: url(dc5ef426e9d98084f57d.png);
+    background-image: url(6aa8433ffb5093b484c6.webp);
     background-repeat: no-repeat;
     background-size: 90vw;
     background-position: top 0 right 0;
@@ -380,7 +380,7 @@ body {
 
 @media screen and (max-width: 1023px) {
     .body {
-        background-image: url(0684de9a76b3e6bd95f7.png);
+        background-image: url(caa30aecc1cee7cb40ba.webp);
         background-position: top 20px;
     }
 }
@@ -428,7 +428,7 @@ body {
 
 .header__back-img {
     content: '';
-    /* background-image: url(../images/white-room.png); */
+    /* background-image: url(../images/white-room.webp); */
     position: absolute;
     top: 0;
     right: 0;
@@ -1384,7 +1384,7 @@ body {
 .contacts__map {
     width: 1272px;
     height: 640px;
-    background-image: url(d16843e9485044c50f0b.png);
+    background-image: url(ef7db1682ccb43a82b46.webp);
     background-size: cover;
     position: relative;
     margin-top: 40px;
@@ -1509,7 +1509,7 @@ body {
     .contacts__map {
         width: 100%;
         height: 780px;
-        background-image: url(c5e8a721059f3564642b.png);
+        background-image: url(a70abf59d58f82cda6c9.webp);
         flex-direction: row;
         align-items: start;
     }
@@ -1656,7 +1656,7 @@ body {
     .contacts__map_mobile {
         width: 100%;
         aspect-ratio: 1/1.1;
-        background-image: url(c5e8a721059f3564642b.png);
+        background-image: url(a70abf59d58f82cda6c9.webp);
         background-size: 600px;
         background-position: center;
         position: relative;
@@ -1703,7 +1703,7 @@ body {
 
 .banner::after {
     content: '';
-    background-image: url(f4c791dc45b709535d7c.png);
+    background-image: url(7c112668c3aa0f6c1451.webp);
     position: absolute;
     right: 44px;
     top: -49px;
@@ -1713,7 +1713,7 @@ body {
 
 .banner::before {
     content: '';
-    background-image: url(f12b732591a7a656ca88.png);
+    background-image: url(de8596f0b0de93c2777b.webp);
     position: absolute;
     right: 356px;
     top: 187px;
@@ -1778,7 +1778,7 @@ body {
     .banner::after {
         width: 316px;
         height: 354px;
-        background-image: url(15eb12c93f849b86f2cf.png);
+        background-image: url(6ad287811203758377f2.webp);
         right: 0;
         top: -18px;
     }
@@ -2487,7 +2487,7 @@ body {
 }
 
 .swiper-slide__img_K1600GT {
-    background: url(ad46f750ffbefee79dce.png);
+    background: url(9c3844cf127b0c041126.webp);
     background-position: center;
     width: 254px;
     height: 184px;
@@ -2495,7 +2495,7 @@ body {
 }
 
 .swiper-slide__img_Harley-Davidson {
-    background: url(c863345d24d9dc9e46fe.png);
+    background: url(bfae2418da7db5c02795.webp);
     background-position: center;
     background-repeat: no-repeat;
     width: 288px;
@@ -2504,7 +2504,7 @@ body {
 }
 
 .swiper-slide__img_G310GS {
-    background: url(ad41b0ea19d610a798b3.png);
+    background: url(10c9a6bebd5c46d6c7d2.webp);
     background-position: center;
     background-repeat: no-repeat;
     width: 288px;
@@ -2513,7 +2513,7 @@ body {
 }
 
 .swiper-slide__img_CFMOTO {
-    background: url(a57deb6be8dcffdc32fe.png);
+    background: url(5536a74cd61ee7540119.webp);
     background-position: center;
     background-repeat: no-repeat;
     width: 288px;
