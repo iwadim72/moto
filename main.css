@@ -2272,7 +2272,7 @@ body {
 }
 
 .swiper-slide__cost-border {
-    width: 48.2%;
+    width: 47%;
     height: 0px;
 
     border: 1px dashed #D4D5DD;
@@ -2280,7 +2280,7 @@ body {
 
 @media screen and (max-width: 1460px) {
     .swiper-slide__cost-border {
-        width: 44%;
+        width: 30%;
     }
 
     .swiper-slide__cost {
@@ -2604,7 +2604,7 @@ body {
     }
 
     .swiper-slide__cost-border {
-        width: 30%;
+        width: 20%;
     }
 
     .swiper-slide__prepayment {
