@@ -673,6 +673,8 @@ body {
         border: none;
         background-image: url(0f0dcb8ac49176167556.svg);
         background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
         background-color: white
     }
 
@@ -2112,6 +2114,21 @@ body {
 
 
     color: #232629;
+}
+
+.input-error {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    max-width: 354px;
+    color: red;
+    display: none;
+}
+
+.input-error_active {
+    display: block;
 }
 
 .form__input-error {
