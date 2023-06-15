@@ -2499,7 +2499,7 @@ body {
     background-position: center;
     width: 254px;
     height: 184px;
-    background-size: 254px;
+    background-size: contain;
     background-repeat: no-repeat
 }
 
@@ -2508,7 +2508,7 @@ body {
     background-position: center;
     width: 254px;
     height: 184px;
-    background-size: 254px;
+    background-size: contain;
     background-repeat: no-repeat
 }
 
