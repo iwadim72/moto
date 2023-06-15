@@ -2272,7 +2272,7 @@ body {
 }
 
 .swiper-slide__cost-border {
-    width: 47%;
+    width: 46%;
     height: 0px;
 
     border: 1px dashed #D4D5DD;
@@ -2494,6 +2494,24 @@ body {
     background-size: 254px;
 }
 
+.swiper-slide__img_Yamaha {
+    background: url(0a15db5214875723dd9c.webp);
+    background-position: center;
+    width: 254px;
+    height: 184px;
+    background-size: 254px;
+    background-repeat: no-repeat
+}
+
+.swiper-slide__img_Triumph {
+    background: url(4763687580f57eba1eb1.webp);
+    background-position: center;
+    width: 254px;
+    height: 184px;
+    background-size: 254px;
+    background-repeat: no-repeat
+}
+
 .swiper-slide__img_Harley-Davidson {
     background: url(bfae2418da7db5c02795.webp);
     background-position: center;
@@ -2642,6 +2660,20 @@ body {
     }
 
     .swiper-slide__img_K1600GT {
+        width: 213px;
+        height: 159px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .swiper-slide__img_Triumph {
+        width: 213px;
+        height: 159px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .swiper-slide__img_Yamaha {
         width: 213px;
         height: 159px;
         background-size: contain;
